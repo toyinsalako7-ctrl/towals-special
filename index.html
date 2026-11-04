@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#10152b">
+<meta name="description" content="Towals Special — discover, shop and enjoy.">
+<title>TOWALS SPECIAL</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+<a class="brand" href="#"><span class="mark">T</span><span>TOWALS <b>SPECIAL</b></span></a>
+<button id="menu" aria-label="Toggle menu">☰</button>
+<nav id="nav"><a href="#home">Home</a><a href="#marketplace">Marketplace</a><a href="#entertainment">Entertainment</a><a href="#sell">Upload</a></nav>
+<a class="cta" href="#sell">Post a listing</a>
+</header>
+<main>
+<section class="hero" id="home"><div><p class="eyebrow">DISCOVER • SHOP • ENJOY</p>
+<h1>Everything interesting.<br><span>In one special place.</span></h1>
+<p class="lead">Explore products from partner stores, discover community listings and find something entertaining.</p>
+<a class="btn" href="#marketplace">Explore marketplace</a> <a class="btn light" href="#entertainment">Entertainment</a></div>
+<div class="hero-art"><div class="orb">TS</div><b>YOUR EVERYDAY<br>DISCOVERY HUB</b><small>Shop smart. Share more. Have fun.</small></div></section>
+<div class="ad"><b>ADVERTISEMENT SPACE</b><small>Add approved AdSense code here later.</small></div>
+<section class="section" id="marketplace"><p class="eyebrow">SHOPPING DESTINATION</p><h2>Marketplace</h2><p class="muted">Browse partner stores or explore listings shared by the community.</p>
+<div class="stores">
+<a href="https://www.oraimo.com/" target="_blank" rel="noopener"><i>O</i><span><b>Oraimo</b><small>Phones, audio & accessories</small></span>↗</a>
+<a href="https://www.temu.com/" target="_blank" rel="noopener"><i>T</i><span><b>Temu</b><small>Discover products and deals</small></span>↗</a>
+<a href="https://www.jumia.com.ng/" target="_blank" rel="noopener"><i>J</i><span><b>Jumia</b><small>Shop online in Nigeria</small></span>↗</a>
+</div>
+<div class="toolbar"><h3>Community listings</h3><input id="search" placeholder="Search listings..." type="search"></div><div id="listings" class="cards"></div>
+</section>
+<div class="ad slim"><b>ADVERTISEMENT SPACE</b><small>Responsive banner placement</small></div>
+<section class="section alt" id="entertainment"><p class="eyebrow">TAKE A BREAK</p><h2>Entertainment</h2><p class="muted">A space for fun content and community discoveries.</p>
+<div class="ent-grid">
+<article><div class="tile purple">▶</div><h3>Videos</h3><p>Explore video content through official channels.</p><a href="https://www.youtube.com/" target="_blank" rel="noopener">Explore videos ↗</a></article>
+<article><div class="tile teal">♫</div><h3>Music</h3><p>Discover music through official streaming pages.</p><a href="https://music.youtube.com/" target="_blank" rel="noopener">Explore music ↗</a></article>
+<article><div class="tile orange">✦</div><h3>Community</h3><p>Share a useful, fun or interesting discovery.</p><a href="#sell">Share a listing ↓</a></article>
+</div></section>
+<section class="section upload" id="sell"><div><p class="eyebrow">YOUR TURN</p><h2>Have something to share?</h2><p class="muted">Post a product, service or discovery for visitors to explore.</p><div class="notice">Demo mode: listings are saved in this browser only. Connect Supabase to share listings across devices.</div></div>
+<form id="form"><label>Listing title<input name="title" maxlength="70" required placeholder="e.g. Wireless earbuds"></label>
+<label>Category<select name="category"><option>Products</option><option>Services</option><option>Entertainment</option><option>Other</option></select></label>
+<label>Description<textarea name="description" rows="3" maxlength="300" required placeholder="Tell visitors about it..."></textarea></label>
+<label>Destination link<input name="url" type="url" required placeholder="https://..."></label>
+<label>Image (optional)<input name="image" type="file" accept="image/*"></label><button class="btn" type="submit">Publish listing</button><p id="message" class="message"></p></form></section>
+</main>
+<footer><a class="brand" href="#"><span class="mark">T</span><span>TOWALS <b>SPECIAL</b></span></a><span>Discover • Shop • Enjoy</span><small>© <span id="year"></span> TOWALS SPECIAL. External stores are independently operated.</small></footer>
+<script src="app.js"></script></body></html>
